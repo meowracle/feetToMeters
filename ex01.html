@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex01</title>
+</head>
+<body>
+<script>
+    while (true) {
+        var a = parseInt(prompt("moi nhap vao so do"));
+        var unit = parseInt(prompt("moi nhap vao don vi: 1=feet to meters, 2=meters to feet"));
+        var resutl;
+        if (unit == 1) {
+            resutl = footToMeter(a);
+        } else {
+            resutl = meterToFoot(a);
+        }
+
+        function footToMeter(value) {
+            return value * 0.305;
+        }
+
+        function meterToFoot(value) {
+            return value * 3.279;
+        }
+
+        alert("ket qua la: " + resutl);
+    }
+</script>
+</body>
+</html>
